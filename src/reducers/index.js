@@ -1,7 +1,8 @@
 import React from 'react';
 
-import { CountDispatchContext } from '../App';
-import { useListDispatch, listReducer } from './listReducer';
+import { CountDispatchContext } from '../contexts';
+import { listReducer, useListDispatch } from './listReducer';
+import { authReducer, useAuthdispatch } from './authReducer';
 
 function countReducer(state, action) {
   console.log('countReducer !!!!! =====');
@@ -27,4 +28,11 @@ function useCountDispatch() {
     return context
 }
 
-export { countReducer, useCountDispatch, listReducer, useListDispatch }
+export { 
+  countReducer,
+  useCountDispatch,
+  listReducer,
+  useListDispatch,
+  useAuthdispatch,
+  authReducer
+}

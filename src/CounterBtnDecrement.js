@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { CountStateContext } from './App';
+import { CountStateContext } from './contexts';
 import { useCountDispatch, useListDispatch } from './reducers/'
 
 const CounterBtn = () => {

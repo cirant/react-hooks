@@ -1,5 +1,5 @@
 import React from 'react';
-import { ListDispatchContext } from '../App';
+import { ListDispatchContext } from '../contexts';
 
 export function listReducer(state, action) {
   switch (action.type) {

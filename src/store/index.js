@@ -1,4 +1,5 @@
 import listStore from './listStore'
+import authStore from './authStore';
 
 const counterStore = {
   count: 0
@@ -6,5 +7,6 @@ const counterStore = {
 
 export {
   counterStore,
-  listStore
+  listStore,
+  authStore
 }
