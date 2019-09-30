@@ -5,8 +5,6 @@ import { listReducer, useListDispatch } from './listReducer';
 import { authReducer, useAuthdispatch } from './authReducer';
 
 function countReducer(state, action) {
-  console.log('countReducer !!!!! =====');
-  
   switch (action.type) {
     case 'increment': {
     return { ...state, count: state.count + 1 }

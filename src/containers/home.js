@@ -1,14 +1,33 @@
 import React from 'react';
+import Btn from '../CounterBtn';
+import BtnD from '../CounterBtnDecrement';
 
-import { ListStateContext, AuthStateContext } from '../contexts';
+import { ListStateContext, CountStateContext } from '../contexts';
 
-function ListDisplay() {
-  const { list } = React.useContext(ListStateContext)
-  return <ul>
-    {
-      list.map((el, i) => <li key={`element-${i}`} >hola mundo2 {el}</li>)
-    }
-  </ul>
+
+function CountDisplay() {
+  const { count } = React.useContext(CountStateContext)
+  return <div> number: {count}</div>
 }
 
-export default ListDisplay;
+function ListDisplay() { 
+const { list } = React.useContext(ListStateContext)
+
+return <ul>
+  {
+    list.map((el, i) => <li key={`element-${i}`} >hola mundo = {el}</li>)
+  }
+</ul>
+}
+
+const Home = () => {
+return <div>
+  <CountDisplay />
+  <Btn />
+  <BtnD />
+  <ListDisplay />
+</div>
+}
+
+
+export default Home;
