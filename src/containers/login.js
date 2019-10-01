@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ListStateContext, AuthStateContext } from '../contexts';
+import { ListStateContext } from '../contexts';
 
 function ListDisplay() {
   const { list } = React.useContext(ListStateContext)
